@@ -9,6 +9,7 @@ import DataBind from '@/pages/DataBind'
 import EventFire from '@/pages/EventFire'
 import LoadComponent from '@/pages/LoadComponent'
 import FetchData from '@/pages/FetchData'
+import VuexRunning from '@/pages/VuexRunning'
 
 Vue.use(Router)
 
@@ -50,6 +51,11 @@ export default new Router({
       path: '/fetchdata',
       name: 'FetchData',
       component: FetchData
+    },
+    {
+      path: '/vuexrunning',
+      name: 'VuexRunning',
+      component: VuexRunning
     }
   ]
 })
