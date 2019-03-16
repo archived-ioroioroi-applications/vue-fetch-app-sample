@@ -7,6 +7,7 @@ import Top from '@/components/Top'
 import Notice from '@/components/Notice'
 import DataBind from '@/pages/DataBind'
 import EventFire from '@/pages/EventFire'
+import LoadComponent from '@/pages/LoadComponent'
 
 Vue.use(Router)
 
@@ -38,6 +39,11 @@ export default new Router({
       path: '/eventfire',
       name: 'EventFire',
       component: EventFire
+    },
+    {
+      path: '/loadcomponent',
+      name: 'LoadComponent',
+      component: LoadComponent
     }
   ]
 })
