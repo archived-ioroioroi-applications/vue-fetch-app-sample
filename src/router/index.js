@@ -6,6 +6,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Top from '@/components/Top'
 import Notice from '@/components/Notice'
 import DataBind from '@/pages/DataBind'
+import EventFire from '@/pages/EventFire'
 
 Vue.use(Router)
 
@@ -32,6 +33,11 @@ export default new Router({
       path: '/databind',
       name: 'DataBind',
       component: DataBind
+    },
+    {
+      path: '/eventfire',
+      name: 'EventFire',
+      component: EventFire
     }
   ]
 })
