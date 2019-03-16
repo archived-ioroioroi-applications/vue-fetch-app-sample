@@ -8,6 +8,7 @@ import Notice from '@/components/Notice'
 import DataBind from '@/pages/DataBind'
 import EventFire from '@/pages/EventFire'
 import LoadComponent from '@/pages/LoadComponent'
+import FetchData from '@/pages/FetchData'
 
 Vue.use(Router)
 
@@ -44,6 +45,11 @@ export default new Router({
       path: '/loadcomponent',
       name: 'LoadComponent',
       component: LoadComponent
+    },
+    {
+      path: '/fetchdata',
+      name: 'FetchData',
+      component: FetchData
     }
   ]
 })
