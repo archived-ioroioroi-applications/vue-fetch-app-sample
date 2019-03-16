@@ -5,6 +5,7 @@ import HelloWorld from '@/components/HelloWorld'
 // 自作したコンポーネントをimport
 import Top from '@/components/Top'
 import Notice from '@/components/Notice'
+import DataBind from '@/pages/DataBind'
 
 Vue.use(Router)
 
@@ -26,6 +27,11 @@ export default new Router({
       path: '/notice',
       name: 'Notice',
       component: Notice
+    },
+    {
+      path: '/databind',
+      name: 'DataBind',
+      component: DataBind
     }
   ]
 })
