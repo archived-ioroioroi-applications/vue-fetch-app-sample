@@ -25,7 +25,41 @@ export default new Router({
     {
       path: '/top',
       name: 'Top',
-      component: Top
+      component: Top,
+      props: {
+        menu: {
+          type: Array,
+          required: true
+        },
+        collapsed: {
+          type: Boolean,
+          default: false
+        },
+        width: {
+          type: String,
+          default: '350px'
+        },
+        widthCollapsed: {
+          type: String,
+          default: '50px'
+        },
+        showChild: {
+          type: Boolean,
+          default: false
+        },
+        theme: { // available themes: 'white-theme'
+          type: String,
+          default: ''
+        },
+        showOneChild: {
+          type: Boolean,
+          default: false
+        },
+        rtl: {
+          type: Boolean,
+          default: false
+        }
+      }
     },
     {
       path: '/notice',

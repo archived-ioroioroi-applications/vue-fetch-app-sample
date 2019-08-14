@@ -8,6 +8,10 @@ import locale from 'element-ui/lib/locale/lang/ja'
 import 'element-ui/lib/theme-chalk/index.css'
 import store from './store'
 
+import VueSidebarMenu from 'vue-sidebar-menu'
+import 'vue-sidebar-menu/dist/vue-sidebar-menu.css'
+Vue.use(VueSidebarMenu)
+
 Vue.use(Element, { locale })
 
 Vue.config.productionTip = false

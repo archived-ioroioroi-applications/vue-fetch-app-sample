@@ -80,6 +80,7 @@
         </a>
       </li>
     </ul>
+    <sidebar-menu :menu="menu" />
   </div>
 </template>
 
@@ -88,10 +89,41 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to My Playground With Vue.js'
+      msg: 'Welcome to My Playground With Vue.js',
+      menu: [
+        {
+          header: true,
+          title: 'Main Navigation'
+          // component: componentName
+          // visibleOnCollapse: true
+        },
+        {
+          href: '/',
+          title: 'Dashboard',
+          icon: 'fa fa-user'
+          /*
+          disabled: true
+          badge: {
+            text: 'new',
+            // class:''
+          }
+          */
+        },
+        {
+          title: 'Charts',
+          icon: 'fa fa-chart-area',
+          child: [
+            {
+              href: '/charts/sublink',
+              title: 'Sub Link'
+            }
+          ]
+        }
+      ]
     }
   }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

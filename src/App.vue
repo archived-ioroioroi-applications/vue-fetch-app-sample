@@ -8,10 +8,13 @@
 
 <script>
 import Header from '@/components/Header'
+import { SidebarMenu } from 'vue-sidebar-menu'
+
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    SidebarMenu
   }
 }
 </script>
